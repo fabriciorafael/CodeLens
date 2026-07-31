@@ -1,11 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
 function App() {
   const[code, setCode] = useState('');
+  const [loading, setloading] = useState(false);
 
   const handleAnalyze = () => {
-
-  }
+    if (!code.trim()) 
+      return;
+    
+};
 
   return (
     <main>
